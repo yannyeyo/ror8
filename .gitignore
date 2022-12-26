@@ -32,7 +32,8 @@
 /home/yan/Lab8_ror/vendor/bundle/ruby
 
 /.bundle
-/vendor/bundle
+/vendor/bundle/*
+!/vendor/bundle/
 
 *.rbc
 capybara-*.html
