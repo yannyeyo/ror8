@@ -34,6 +34,13 @@
 /.bundle
 /vendor/bundle
 
+*.rbc
+capybara-*.html
+.rspec
+/log
+/tmp
+/config/database.yml
+/public/system
 /public/assets
 
 # Ignore master key for decrypting credentials and more.
