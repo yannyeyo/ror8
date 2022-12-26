@@ -29,6 +29,11 @@
 !/tmp/storage/
 !/tmp/storage/.keep
 
+/home/yan/Lab8_ror/vendor/bundle/ruby
+
+/.bundle
+/vendor/bundle
+
 /public/assets
 
 # Ignore master key for decrypting credentials and more.
