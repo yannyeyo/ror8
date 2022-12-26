@@ -1,0 +1,36 @@
+<head>
+    <style>
+        tr, th, td {
+            border: 1px solid black;
+            }
+        .tab{
+            height:40%;
+            width:100%;
+            border: 1px solid black;
+            }
+    </style>
+</head>
+
+<body>
+<h3>Таблица с результатами</h3>
+Введенное диапазон: [0, <%= @number %>]
+<table class = "tab">
+    <tr>
+    <th>Номер числа</th>
+    <th>Простое число</th>
+    <th>Число Мерсена</th>
+    </tr>
+    <% i = 0%>
+    <% @res_arr.each do |elem|%>
+    <tr>
+        <td><%= i +=1 %></td>
+        <td><%= elem%></td>
+        <td><%= (2**elem) - 1%></td>
+    </tr>
+    <% end%>
+</table>
+Количество таких чисел
+<p id="counter"><%= @res_arr.size %></p>
+<%= link_to "Вернуться назад", home_path %>
+</body>
+
